@@ -8,7 +8,7 @@ public class Fibonacci {
 
 	// Конструктор з параметром n
 	public Fibonacci(int n) {
-		Fibonacci.n = n;
+		this.n = n;
 	}
 
 	// геттер-метод поля n
@@ -52,20 +52,19 @@ public class Fibonacci {
 
 	public static void main(String[] args) {
 		
-		try (// Ввід з клавіатури
-		Scanner in = new Scanner(System.in)) {
-			System.out.print("\nEnter the sequence number of the Fibonacci: ");
-			int n = in.nextInt();
-			
-			// Створення об'єкту
-			Fibonacci f = new Fibonacci(n);
-			
-			System.out.println("The sequence number of the Fibonacci: " + getN());
-			
-			System.out.print("The value of Fibonacci number: " + f.fibonacciN(n));
-			
-			System.out.println();
-			System.out.println("The quantity of additions: " + f.countOfAdditions(n) + "\n");
-		}
+	// Ввід з клавіатури
+	Scanner in = new Scanner(System.in);
+		System.out.print("\nEnter the sequence number of the Fibonacci: ");
+		int n = in.nextInt();
+		
+		// Створення об'єкту
+		Fibonacci f = new Fibonacci(n);
+		
+		System.out.println("The sequence number of the Fibonacci: " + getN());
+		
+		System.out.print("The value of Fibonacci number: " + f.fibonacciN(n));
+		
+		System.out.println();
+		System.out.println("The quantity of additions: " + f.countOfAdditions(n) + "\n");
 	}
 }
