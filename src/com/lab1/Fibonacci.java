@@ -52,8 +52,8 @@ public class Fibonacci {
 
 	public static void main(String[] args) {
 		
-	// Ввід з клавіатури
-	Scanner in = new Scanner(System.in);
+		// Ввід з клавіатури
+		Scanner in = new Scanner(System.in);
 		System.out.print("\nEnter the sequence number of the Fibonacci: ");
 		int n = in.nextInt();
 		
